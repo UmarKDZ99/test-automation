@@ -1,0 +1,7 @@
+tests\RegistrationTest.class
+pages\LoginPage.class
+utils\OTPExtractor.class
+basetest\BaseTest.class
+pages\RegistrationPage.class
+tests\LoginTest.class
+utils\ExtentManager.class
