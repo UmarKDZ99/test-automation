@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ReportNGSuite">
+   
+  <test name="TestReportNG">
+  	<groups>
+  	    <dependencies>
+  	        <group name="RegistrationSurveyCompleted"  depends-on="ProgramSetup"  />
+  	        <group name="VendorRegistrationGroup"  depends-on="RegistrationSurveyCompleted"  />
+  	        <group name="FillGuidingSurveyFromApp"  depends-on="VendorRegistrationGroup"  />
+  	        <group name="TestSettingsGroup"  depends-on="FillGuidingSurveyFromApp"  />
+  	    </dependencies>
+  	</groups>
+  	
+  	<classes>
+      <class name="TestCases.ProgramTestClass" />
+      <class name="TestCases.FillRegistrationTestClass" />
+      <class name="TestCases.VerifyReviewRegistrationTestClass" />
+      <class name="TestCases.NESTAppTests" />
+      <class name="TestCases.VerifyTestSettings" />
+    </classes>
+  	
+  </test> <!-- TestReportNG -->
+</suite> <!-- ReportNGSuite -->

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ReportNGSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestReportNG(failed)">
+    <classes>
+      <class name="TestCases.NESTAppTests">
+        <methods>
+          <include name="TestOne"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCases.NESTAppTests -->
+      <class name="TestCases.VerifyReviewRegistrationTestClass">
+        <methods>
+          <include name="setupApplication"/>
+          <include name="closeApplication"/>
+          <include name="verifyAcceptVendorRegistrationApplication"/>
+        </methods>
+      </class> <!-- TestCases.VerifyReviewRegistrationTestClass -->
+      <class name="TestCases.ProgramTestClass">
+        <methods>
+          <include name="setupApplication"/>
+          <include name="createRegistrationStep"/>
+          <include name="CAPStep"/>
+          <include name="ReviewRegistration"/>
+          <include name="closeApplication"/>
+          <include name="ReviewCAP"/>
+          <include name="GuidingStep"/>
+          <include name="createProgramAndPhase"/>
+          <include name="ReviewGuiding"/>
+        </methods>
+      </class> <!-- TestCases.ProgramTestClass -->
+      <class name="TestCases.VerifyTestSettings">
+        <methods>
+          <include name="setupApplication"/>
+          <include name="closeApplication"/>
+          <include name="VerifyVendorSearch1"/>
+        </methods>
+      </class> <!-- TestCases.VerifyTestSettings -->
+      <class name="TestCases.FillRegistrationTestClass">
+        <methods>
+          <include name="testWebRegistrationSurvey"/>
+          <include name="setupApplication"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- TestCases.FillRegistrationTestClass -->
+    </classes>
+  </test> <!-- TestReportNG(failed) -->
+</suite> <!-- Failed suite [ReportNGSuite] -->

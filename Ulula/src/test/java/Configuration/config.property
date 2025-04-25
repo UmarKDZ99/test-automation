@@ -1,0 +1,6 @@
+URL=https://staging.ulula.app/login
+UserName=shakeel@ulula.com
+Password=123456
+ExcelPath=D:\\Eclipse Workspace\\Ulula\\src\\test\\resources\\MyExcelFile.xlsx
+SreenShotPath=D:\\Eclipse Workspace\\Ulula\\src\\test\\resources\\Screenshots\\
+ExtentReportPath=D:\\Eclipse Workspace\\Ulula\\test-output\\FinalExtentReport.html
