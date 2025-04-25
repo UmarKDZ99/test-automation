@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Full Registration Suite" verbose="1" parallel="none">
+
+    <listeners>
+        <listener class-name="listeners.TestListener"/>
+    </listeners>
+
+    <test name="Sequential Registration Tests">
+        <classes>
+            <class name="tests.RegistrationTestOasis"/>
+            <class name="tests.RegistrationTest"/>
+            <class name="tests.RegistrationTestMosquito"/>
+            <class name="tests.RegistrationTestTaexxRS"/>
+            <class name="tests.RegistrationTestTermitecontrolpc"/>
+        </classes>
+    </test>
+
+</suite>
